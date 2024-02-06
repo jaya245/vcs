@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git and GitHub</title>
+</head>
+
+<body>
+    <div style="width:460px; margin:auto">
+        <img src="git.jpg" width="450px" alt="git image">
+        <h2>Git Commands and their uses</h2>
+        <p>
+            <b>Git</b> is a version control system which needs to be installed in our machines
+            to keep track of the code file changes and later save them on a remote repository
+            like Github or Bigbucket.
+            <br><br>
+            <a href="https://youtu.be/e9lnsKot_SQ?si=GWRzn1VUBhwMQSoo">4 mins video to understand git
+                concepts</a><br><br>
+            Below are the git commands and their corresponding functionalities:
+            <br><br>
+        <ul>
+            <li><b>git init</b></li><br>
+            It is used to intialize git to do version control for our project in our working directory.
+            <br><br>
+            <li><b>git --version</b></li><br>
+            It is used to check the git version installed in our system.
+            <br><br>
+            <li><b>git config --global user.email "you@example.com"</b></li><br>
+            It is used to set the user email id which is used as identification while commiting the code.
+            <br><br>
+            <li><b>git config --global user.name "Your Name"</b></li><br>
+            It is used to set the user email id which is used as identification while commiting the code.
+            <br><br>
+            <li><b>git status</b></li><br>
+            It is used to know the sattus of our code files like whether they are untracked,staged or commited.
+            <br><br>
+            <li><b>git add [filename]</b></li><br>
+            It is used to stage the untracked code file. Means the file from the working directory is moved to
+            the staging area where this file is held for its changes to be commited to local repository.
+            <br><br>
+            <li><b>git add .</b></li><br>
+            It will add i.e. stage all the code files to the staging area.
+            <br><br>
+            <li><b>git commit -m "[message]"</b></li><br>
+            It is used to commit the staged changes to the local repository with a -m option where the message
+            is given to identify the recent changes.
+            Basically we are making a log of the changes.
+            <br><br>
+            <li><b>git log</b></li><br>
+            It is used to check the list of commits we have done so far.
+
+            <br><br>
+            <li><b>git reset --hard [SHA number]</b></li><br>
+            SHA number is the secured hash algorithm number which is unique for each commit. <br>
+            It is used to delete the recent commit change and go back to the previous commit working code represented by
+            that particulat commits SHA.
+
+            <br><br>
+            <li><b>git reset --soft [SHA number]</b></li><br>
+            It is used to go back to the previous commited code along with the latest code change still available.The
+            git log will only show
+            previous commited logs but the recent commited log will not be there even though the change in this commit
+            will be still available.
+            <br><br>
+            <li><b>git remote add origin [url]</b></li><br>
+            It is used to set the origin location on remote repository where the code needs to be pushed from local
+            repository.
+            <br><br>
+            <li><b>git branch -M main </b></li><br>
+            This sets the branch name as main
+            <br><br>
+            <li><b>git push -u origin main</b></li><br>
+            It is used to push the code from local to remote at the specified URLs origin's main branch .
+
+            <br><br>
+            <li><b>git clone url </b></li><br>
+            It is used to get the code from remote to local .
+            <br><br>
+            <li><b>git pull</b></li><br>
+            Here u need to go into the folder where the code was cloned and do git pull .
+            It is used to get any latest changes which happened on remote
+
+            Actually git pull has two steps in it .. git fetch which fetches the code from remote and git merge which
+            merges any new changes to the local .
+            <br><br>
+            <li><b>git branch </b></li><br>
+            It is used to check which are the branches and which is the current branch ..
+            <br><br>
+            <li><b>git branch [branchname] </b></li><br>
+            It is used to create a branch with the mentioned branch name .
+            <br><br>
+            <li><b>git checkout branchname </b></li><br>
+            It is used to check out from current branch and move on to the mentioned branch .
+            <br><br>
+            <li><b>git merge branchname</b></li><br>
+            It is used to merge the new changes done in the mentioned branchname into the current branch.
+        </ul>
+
+        <br><br>
+        </p>
+    </div>
+</body>
+
+</html>
